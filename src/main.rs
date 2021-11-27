@@ -5,7 +5,8 @@
 // mod try_lifetime;
 // mod try_closure;
 // mod try_iter;
-mod try_smart_pointer;
+// mod try_smart_pointer;
+mod try_concurrent;
 
 
 fn main() {
@@ -17,10 +18,7 @@ fn main() {
     // try_closure::try_closure_fn();
     // try_iter::try_iter_fn();
 
-    // try_smart_pointer::try_box();
-    // try_smart_pointer::try_my_box();
-    // try_smart_pointer::try_drop_trait();
-    // try_smart_pointer::try_rc_trait();
-    // try_smart_pointer::try_ref_cell_trait();
-    try_smart_pointer::try_make_a_tree();
+    // try_smart_pointer::run()
+
+    try_concurrent::run();
 }

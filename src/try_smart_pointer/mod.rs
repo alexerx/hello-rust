@@ -57,7 +57,7 @@ pub fn try_drop_trait() {
   println!("CustomSmartPointer dropped before the end of main.");
 }
 
-pub fn try_rc_trait() {
+pub fn try_rc() {
   // let a = String::from("hello");
   // let b = a;
   // let c = a; // error: use of moved value: `a`
@@ -78,7 +78,7 @@ pub fn try_rc_trait() {
   println!("counter for a: {}", Rc::strong_count(&a));
 }
 
-pub fn try_ref_cell_trait() {
+pub fn try_ref_cell() {
   struct Node {
     name: String,
     contents: RefCell<Vec<String>>,
@@ -145,4 +145,13 @@ pub fn try_make_a_tree() {
   );
 
   println!("{:?}", root);
+}
+
+pub fn run() {
+  // try_box();
+  // try_my_box();
+  // try_drop_trait();
+  // try_rc();
+  // try_ref_cell();
+  try_make_a_tree();
 }
