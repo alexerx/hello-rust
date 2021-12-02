@@ -6,7 +6,10 @@
 // mod try_closure;
 // mod try_iter;
 // mod try_smart_pointer;
-mod try_concurrent;
+// mod try_concurrent;
+// mod try_unsafe;
+// mod try_overload;
+mod try_supertrait;
 
 
 fn main() {
@@ -20,5 +23,8 @@ fn main() {
 
     // try_smart_pointer::run()
 
-    try_concurrent::run();
+    // try_concurrent::run();
+    // try_unsafe::run();
+    // try_overload::run();
+    try_supertrait::run();
 }
