@@ -9,7 +9,8 @@
 // mod try_concurrent;
 // mod try_unsafe;
 // mod try_overload;
-mod try_supertrait;
+// mod try_supertrait;
+mod try_newtype;
 
 
 fn main() {
@@ -26,5 +27,6 @@ fn main() {
     // try_concurrent::run();
     // try_unsafe::run();
     // try_overload::run();
-    try_supertrait::run();
+    // try_supertrait::run();
+    try_newtype::run();
 }
