@@ -7,15 +7,15 @@ pub fn run() {
 pub fn try_newtype() {
   // impl Display for String { } // error，孤儿规则
 
-  struct WrapperString(String);
+  struct WrappedString(String);
 
-  impl Display for WrapperString {
+  impl Display for WrappedString {
     fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
       write!(f, "STRING: {}", self.0)
     }
   }
 
-  let ws = WrapperString(String::from("rust"));
+  let ws = WrappedString(String::from("rust"));
 
   println!("{}", ws); // STRING: rust
 }
