@@ -10,7 +10,8 @@
 // mod try_unsafe;
 // mod try_overload;
 // mod try_supertrait;
-mod try_newtype;
+// mod try_newtype;
+// mod try_sized;
 
 
 fn main() {
@@ -28,5 +29,7 @@ fn main() {
     // try_unsafe::run();
     // try_overload::run();
     // try_supertrait::run();
-    try_newtype::run();
+    // try_newtype::run();
+    // try_sized::run();
+
 }
